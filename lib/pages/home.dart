@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> {
       await shared.removeUserShared();
       turnSnackBar("Remove Shared Data");
       setState(() {});
-    } else {}
+    }
   }
 
   saveServiceData() async {
@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
       await SharedPrefs().createDataShared(_services.response.body);
       turnSnackBar("Save Service Data");
       setState(() {});
-    } else {}
+    }
   }
 
   @override
